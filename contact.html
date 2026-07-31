@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn more about Alpha Gear, our team, and our commitment to bringing top tier hardware to gamers worldwide.">
+    <title>About Us | Alpha Gear</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALPHA GEAR</title>
+    <!-- This is the crucial link tag: -->
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="header-container">
+            <a href="index.html" class="logo">ALPHA<span>GEAR</span></a>
+            <button class="menu-toggle" aria-label="Toggle Navigation" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                    <li>
+                        <a href="cart.html" class="cart-icon-container">
+                            Cart (<span id="cart-count">0</span>)
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container page-content">
+        <header class="page-header">
+            <h1>Contact Our Team</h1>
+            <p>Got a question about compatibility or delivery? Let's connect.</p>
+        </header>
+
+        <div class="contact-layout">
+            <section class="contact-form-container">
+                <form id="contact-form" class="contact-form" novalidate>
+                    <div class="form-group">
+                        <label for="contact-name">Full Name *</label>
+                        <input type="text" id="contact-name" name="name" placeholder="John Doe" required>
+                        <span class="error-msg" id="contact-name-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact-email">Email Address *</label>
+                        <input type="email" id="contact-email" name="email" placeholder="john@example.com" required>
+                        <span class="error-msg" id="contact-email-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact-subject">Subject *</label>
+                        <input type="text" id="contact-subject" name="subject" placeholder="Question regarding..." required>
+                        <span class="error-msg" id="contact-subject-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact-message">Your Message *</label>
+                        <textarea id="contact-message" name="message" rows="5" placeholder="How can we help?" required></textarea>
+                        <span class="error-msg" id="contact-message-error"></span>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+                <div id="contact-success" class="success-alert" style="display: none;">
+                    <h3>Message Sent Successfully!</h3>
+                    <p>Thank you for reaching out. An agent will get back to you within 24 hours.</p>
+                </div>
+            </section>
+
+            <aside class="contact-info-aside">
+                <div class="info-card">
+                    <h3>Headquarters</h3>
+                    <p>Global Banking School London Campus</p>
+                    <p>89 Albert Embankment, Vauxhall, London SE1 7TP</p>
+                    <p><strong>Email:</strong> support@alphagear.com</p>
+                    <p><strong>Phone:</strong> +44 20 1234 5678</p>
+                </div>
+                <div class="map-placeholder">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2484.286280456185!2d-0.12574042299831386!3d51.48956961125774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604bf893e64f7%3A0xe54e3f3607fa4891!2sGlobal%20Banking%20School%20(GBS)!5e0!3m2!1sen!2suk!4v1721124400000!5m2!1sen!2suk"
+                        width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-container container">
+            <div class="footer-info">
+                <h3>ALPHA<span>GEAR</span></h3>
+                <p>Your ultimate destination for professional-grade gaming peripherals and hardware.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+                <h4>Newsletter</h4>
+                <p>Subscribe to get updates on exclusive drops and promotional sales.</p>
+                <form id="newsletter-form" class="newsletter-form">
+                    <input type="email" placeholder="Your Email" aria-label="Newsletter Email Address" required>
+                    <button type="submit" class="btn btn-secondary">Join</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Alpha Gear. Designed for GBS BSU Web Development Module. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

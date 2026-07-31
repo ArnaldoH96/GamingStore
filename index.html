@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Alpha Gear - Premium Gaming Consoles, Accessories, and Hardware. Upgrade your setup today.">
+    <title>Alpha Gear | Premium Gaming Store</title>
+    <!-- Links to your CSS file in the same folder -->
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="header-container">
+            <a href="index.html" class="logo">ALPHA<span>GEAR</span></a>
+            <button class="menu-toggle" aria-label="Toggle Navigation" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li>
+                        <a href="cart.html" class="cart-icon-container">
+                            Cart (<span id="cart-count">0</span>)
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 1. The Hero Section (Silent Background Video) -->
+    <section class="hero video-hero" aria-label="Hero Banner">
+        <!-- The Background Video -->
+        <video autoplay loop muted playsinline class="bg-video">
+            <source src="store-video.mp4" type="video/mp4">
+        </video>
+        <!-- Dark overlay to keep text readable -->
+        <div class="hero-overlay"></div>
+        
+        <div class="hero-content">
+            <h1>Level Up Your Game</h1>
+            <p>Discover next-generation consoles, pro-grade accessories, and immersive gear curated for champion gaming.</p>
+            <a href="products.html" class="btn btn-primary">Shop All Gear</a>
+        </div>
+    </section>
+
+    <!-- 2. Shop by Category Section -->
+    <section class="categories container">
+        <h2 class="section-title">Shop by Category</h2>
+        <div class="category-grid">
+            <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?auto=format&fit=crop&w=400&q=80" alt="Consoles Category">
+                <div class="category-overlay">
+                    <h3>Consoles</h3>
+                    <a href="products.html?category=consoles" class="category-link">View More</a>
+                </div>
+            </div>
+            <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1600861195091-690c92f1d2cc?auto=format&fit=crop&w=400&q=80" alt="Controllers Category">
+                <div class="category-overlay">
+                    <h3>Controllers</h3>
+                    <a href="products.html?category=controllers" class="category-link">View More</a>
+                </div>
+            </div>
+            <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=400&q=80" alt="Audio Category">
+                <div class="category-overlay">
+                    <h3>Audio</h3>
+                    <a href="products.html?category=audio" class="category-link">View More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Video Advertisement Section (Playable Ad with Controls) -->
+    <section class="video-ad-section container" style="margin: 4rem auto;">
+        <h2 class="section-title">See It In Action</h2>
+        <div class="video-container">
+            <video class="promo-video" controls>
+                <source src="store-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+
+    <!-- 4. Featured Gear Section (Script Automatically Injects Here) -->
+    <section class="featured-products container">
+        <h2 class="section-title">Featured Gear</h2>
+        <div class="product-grid" id="featured-grid">
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="footer-container container">
+            <div class="footer-info">
+                <h3>ALPHA<span>GEAR</span></h3>
+                <p>Your ultimate destination for professional-grade gaming peripherals and hardware.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+                <h4>Newsletter</h4>
+                <p>Subscribe to get updates on exclusive drops and promotional sales.</p>
+                <form id="newsletter-form" class="newsletter-form">
+                    <input type="email" placeholder="Your Email" aria-label="Newsletter Email Address" required>
+                    <button type="submit" class="btn btn-secondary">Join</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Alpha Gear. Designed for GBS BSU Web Development Module. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Fixed JavaScript link (looking in the main folder) -->
+    <script src="script.js"></script>
+</body>
+</html>

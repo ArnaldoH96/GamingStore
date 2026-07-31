@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn more about Alpha Gear, our team, and our commitment to bringing top tier hardware to gamers worldwide.">
+    <title>About Us | Alpha Gear</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="header-container">
+            <a href="index.html" class="logo">ALPHA<span>GEAR</span></a>
+            <button class="menu-toggle" aria-label="Toggle Navigation" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html" class="active">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li>
+                        <a href="cart.html" class="cart-icon-container">
+                            Cart (<span id="cart-count">0</span>)
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container page-content">
+        <header class="page-header">
+            <h1>Our Hardware Catalog</h1>
+            <p>Equip your battle station with only the absolute best.</p>
+        </header>
+
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="all">All Gear</button>
+            <button class="filter-btn" data-filter="consoles">Consoles</button>
+            <button class="filter-btn" data-filter="controllers">Controllers</button>
+            <button class="filter-btn" data-filter="audio">Audio</button>
+            <button class="filter-btn" data-filter="accessories">Accessories</button>
+        </div>
+
+        <!-- PRODUCTS ADDED HERE (Automatically by script.js) -->
+    <section class="product-grid" id="catalog-grid">
+    </section>
+    </main>
+
+    <div class="modal" id="product-modal" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="modal-content">
+            <button class="close-modal" aria-label="Close modal">&times;</button>
+            <div class="modal-body">
+            </div>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <div class="footer-container container">
+            <div class="footer-info">
+                <h3>ALPHA<span>GEAR</span></h3>
+                <p>Your ultimate destination for professional-grade gaming peripherals and hardware.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+                <h4>Newsletter</h4>
+                <p>Subscribe to get updates on exclusive drops and promotional sales.</p>
+                <form id="newsletter-form" class="newsletter-form">
+                    <input type="email" placeholder="Your Email" aria-label="Newsletter Email Address" required>
+                    <button type="submit" class="btn btn-secondary">Join</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Alpha Gear. Designed for GBS BSU Web Development Module. All rights reserved.</p>
+        </div>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+</html>

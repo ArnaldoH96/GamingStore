@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart | Alpha Gear</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="header-container">
+            <a href="index.html" class="logo">ALPHA<span>GEAR</span></a>
+            <button class="menu-toggle" aria-label="Toggle Navigation" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li>
+                        <a href="cart.html" class="cart-icon-container active">
+                            Cart (<span id="cart-count">0</span>)
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container page-content">
+        <header class="page-header">
+            <h1>Your Battle Station Cart</h1>
+        </header>
+
+        <!-- The Script controls which of these sections to show -->
+        
+        <!-- 1. The Empty Cart Message -->
+        <div id="cart-empty-message" style="text-align: center; padding: 4rem 0;">
+            <h2 style="color: var(--text-light); margin-bottom: 1rem;">Your cart is currently empty.</h2>
+            <a href="products.html" class="btn-primary">Return to Shop</a>
+        </div>
+
+        <!-- 2. The Active Cart Container -->
+        <div style="display: flex; gap: 2rem; flex-wrap: wrap;">
+            
+            <!-- Items inject here -->
+            <div id="cart-items-container" style="flex: 2; min-width: 300px; display: none;">
+                <!-- Script generates rows here -->
+            </div>
+
+            <!-- 3. The Summary & Checkout Card -->
+            <div id="cart-summary-card" style="flex: 1; min-width: 300px; background-color: var(--bg-card); padding: 2rem; border-radius: 8px; display: none; height: fit-content;">
+                <h3 style="color: var(--text-light); margin-bottom: 1.5rem; border-bottom: 1px solid #333; padding-bottom: 1rem;">Order Summary</h3>
+                
+                <div style="display: flex; justify-content: space-between; margin-bottom: 1rem;">
+                    <span>Subtotal</span>
+                    <span id="cart-subtotal" style="font-weight: bold;">£0.00</span>
+                </div>
+                
+                <div style="display: flex; justify-content: space-between; margin-bottom: 1.5rem; font-size: 1.25rem; color: var(--text-light);">
+                    <span>Total</span>
+                    <span id="cart-total" style="color: var(--accent); font-weight: bold;">£0.00</span>
+                </div>
+
+                <form id="checkout-form" style="display: flex; flex-direction: column; gap: 1rem;">
+                    <input type="text" id="checkout-name" placeholder="Full Name" style="padding: 0.75rem; border-radius: 4px; border: none;" required>
+                    <div id="name-error" style="color: #ff6b6b; font-size: 0.8rem; margin-top: -0.5rem;"></div>
+
+                    <input type="email" id="checkout-email" placeholder="Email Address" style="padding: 0.75rem; border-radius: 4px; border: none;" required>
+                    <div id="email-error" style="color: #ff6b6b; font-size: 0.8rem; margin-top: -0.5rem;"></div>
+
+                    <input type="text" id="checkout-address" placeholder="Delivery Address" style="padding: 0.75rem; border-radius: 4px; border: none;" required>
+                    <div id="address-error" style="color: #ff6b6b; font-size: 0.8rem; margin-top: -0.5rem;"></div>
+
+                    <button type="submit" class="btn-primary" style="width: 100%; border: none; cursor: pointer;">Complete Checkout</button>
+                </form>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-container container">
+            <div class="footer-info">
+                <h3>ALPHA<span>GEAR</span></h3>
+                <p>Your ultimate destination for professional-grade gaming peripherals and hardware.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Alpha Gear. Designed for GBS BSU Web Development Module. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- This script link connects the cart logic! -->
+    <script src="script.js"></script>
+</body>
+</html>
